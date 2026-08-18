@@ -1,0 +1,55 @@
+body {
+    margin: 3%;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4A2E2B;
+    background-color: #FFE4C4;
+    border-color:#C44A3A;
+}
+
+main {
+    width: 85%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+#header-image {
+    background-color: bisque;
+    width: 100px;
+    height: auto;
+    /* border-style:solid;
+    border-width: 1px; */
+}
+
+#chat-box {
+    background-color: #D46D25 ;
+    height: 60vh; 
+    width: 80vw; 
+    overflow-y: scroll; 
+    border-style:solid; 
+    border-radius: 6px;
+}
+
+#input-container{
+    margin-top: 3%;
+    width: 80vw; 
+}
+
+#user-input{
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    border-style:solid;
+    border-radius: 6px;
+
+    font-family: inherit;
+
+}
+
+#ask-button {
+    
+}
