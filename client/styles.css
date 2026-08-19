@@ -85,3 +85,8 @@ main {
 #message-text {
     width:100%;
 }
+
+#pending-status-message {
+    display: none;
+    justify-self: center;
+}
