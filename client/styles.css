@@ -88,6 +88,7 @@ main {
 }
 
 #awaiting-response-message {
+    display: none;
     justify-self: center;
     order:9999;
 }
