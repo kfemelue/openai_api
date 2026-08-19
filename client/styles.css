@@ -18,21 +18,23 @@ main {
 }
 
 #header-image {
-    background-color: bisque;
-    width: 100px;
     height: auto;
+    width: 100px;
     border-radius: 50%;
+    background-color: bisque;
 }
 
 #chat-box {
-    background-color: #D46D25 ;
     height: 60vh; 
     width: 80vw; 
-    overflow-y: scroll; 
     border-style:solid; 
     border-radius: 6px;
-    display: flex;
-    flex-direction: column;
+    background-color: #D46D25 ;
+
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-columns: auto;
 }
 
 #input-container{
@@ -64,14 +66,15 @@ main {
 }
 
 #message-user {
+    width:50%;
     margin: 3%;
     padding: 2%;
-    width:50%;
     border-style: solid;
     border-radius: 6px;
     border-width: 1px;
     background-color: bisque;
-    margin-left: auto;
+
+    justify-self: end;
 }
 
 #message-role {
@@ -81,13 +84,14 @@ main {
 
 #message-text {
     width:100%;
+    /* white-space: pre-wrap; */
 }
 
 #pending-status-message {
-    /* display: none; */
-    margin: auto;
-    animation: flash 1.5s infinite;
+    justify-self: center;
     order:9999;
+    animation: flash 1.5s infinite;
+    
 }
 
 /* Animation for flashing text in "Awaiting Server Response Message" */
