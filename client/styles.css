@@ -31,9 +31,8 @@ main {
     overflow-y: scroll; 
     border-style:solid; 
     border-radius: 6px;
-
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #input-container{
@@ -47,9 +46,7 @@ main {
     border: 2px solid;
     border-style:solid;
     border-radius: 6px;
-
     font-family: inherit;
-
 }
 
 #ask-button {
@@ -74,7 +71,7 @@ main {
     border-radius: 6px;
     border-width: 1px;
     background-color: bisque;
-    justify-self: end;
+    margin-left: auto;
 }
 
 #message-role {
@@ -88,8 +85,9 @@ main {
 
 #pending-status-message {
     /* display: none; */
-    justify-self: center;
+    margin: auto;
     animation: flash 1.5s infinite;
+    order:9999;
 }
 
 /* Animation for flashing text in "Awaiting Server Response Message" */
