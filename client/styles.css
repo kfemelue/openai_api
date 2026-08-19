@@ -29,6 +29,7 @@ main {
     width: 80vw; 
     border-style:solid; 
     border-radius: 9px;
+    box-sizing: border-box;
     background-color: #D46D25;
 
     overflow-y: scroll;
@@ -47,6 +48,7 @@ main {
     height: 10vh;
     padding-top: 1%;
     padding-left: 1%;
+    box-sizing: border-box;
     border: 2px solid;
     border-style: solid;
     border-radius: 9px;
