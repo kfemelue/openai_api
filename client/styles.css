@@ -87,14 +87,23 @@ main {
     /* white-space: pre-wrap; */
 }
 
-#pending-status-message {
+#awaiting-response-message {
     justify-self: center;
     order:9999;
-    animation: flash 1.5s infinite;
-    
 }
 
-/* Animation for flashing text in "Awaiting Server Response Message" */
+#awaiting-response-message p {
+    animation:flash 2s infinite;
+
+    /*  Rules for typewriter text effect */
+    /* overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em; 
+    animation: typing 2.5s steps(28, end) infinite; */
+}
+
+/* Animation keyframes for flashing text in "Awaiting Server Response Message" */
 @keyframes flash {
     0%, 100% {
         opacity: 0, 1;
@@ -103,3 +112,13 @@ main {
         opacity: 0;
     }
 }
+
+/* animation keyframes for typewriter text effect */
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+} */
