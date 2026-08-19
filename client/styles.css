@@ -28,7 +28,7 @@ main {
     height: 60vh; 
     width: 80vw; 
     border-style:solid; 
-    border-radius: 6px;
+    border-radius: 9px;
     background-color: #D46D25;
 
     overflow-y: scroll;
@@ -48,7 +48,7 @@ main {
     padding-top: 1%;
     border: 2px solid;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 9px;
     border-width: 2%;
     border-color: #4A2E2B;
     color: bisque;
@@ -71,7 +71,7 @@ textarea:focus{
     padding: 2%;
     width:50%;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 9px;
     border-width: 1px;
     background-color: bisque;
 }
@@ -81,10 +81,9 @@ textarea:focus{
     margin: 3%;
     padding: 2%;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 9px;
     border-width: 1px;
     background-color: bisque;
-
     justify-self: end;
 }
 
@@ -123,12 +122,11 @@ textarea:focus{
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
-  border-radius: 15px;
+  border-radius: 9px;
   box-sizing: border-box;
   color: #3B3B3B;
   cursor: pointer;
   display: inline-block;
-  /* font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
