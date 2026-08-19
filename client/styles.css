@@ -50,13 +50,16 @@ main {
     border-style: solid;
     border-radius: 6px;
     border-width: 2%;
-    color: #4A2E2B;
+    border-color: #4A2E2B;
+    color: bisque;
+    -webkit-text-stroke: 0.3px #4A2E2B;
     background-color: #D46D25;
     font-family: inherit;
     font-weight:bold;
 }
 ::placeholder {
-    color: #4A2E2B;
+    color: bisque;
+    -webkit-text-stroke: 0.3px #4A2E2B;
     font-weight: bolder;
 }
 textarea:focus{
@@ -156,6 +159,7 @@ textarea:focus{
   /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
   transform: translateY(-2px);
 }
+
 
 /* Changes Y-axis position of button when clicked */
 .button-28:active {
