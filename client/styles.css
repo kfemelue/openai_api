@@ -29,7 +29,7 @@ main {
     width: 80vw; 
     border-style:solid; 
     border-radius: 6px;
-    background-color: #D46D25 ;
+    background-color: #D46D25;
 
     overflow-y: scroll;
 
@@ -44,15 +44,23 @@ main {
 
 #user-input{
     width: 100%;
-    height: auto;
+    height: 10vh;
+    padding-top: 1%;
     border: 2px solid;
-    border-style:solid;
+    border-style: solid;
     border-radius: 6px;
+    border-width: 2%;
+    color: #4A2E2B;
+    background-color: #D46D25;
     font-family: inherit;
+    font-weight:bold;
 }
-
-#ask-button {
-    
+::placeholder {
+    color: #4A2E2B;
+    font-weight: bolder;
+}
+textarea:focus{
+    outline: none; 
 }
 
 #message-bot {
@@ -88,7 +96,7 @@ main {
 }
 
 #awaiting-response-message {
-    display: none;
+    /* display: none; */
     justify-self: center;
     order:9999;
 }
@@ -105,4 +113,52 @@ main {
     50% {
         opacity: 0;
     }
+}
+
+/* Button-28 CSS Styling is from https://getcssscan.com/css-buttons-examples */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 3%;
+  min-height: auto;
+  min-width: auto;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+/* Button hover effect */
+.button-28:hover {
+  color: bisque;
+  background-color: #4A2E2B;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+  transform: translateY(-2px);
+}
+
+/* Changes Y-axis position of button when clicked */
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
