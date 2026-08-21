@@ -38,7 +38,10 @@
                 </div>
             </div>
             <div id="input-container">
-                <textarea id="user-input" required placeholder="Try asking for a restaurant recommendation in your city" name="user-prompt" id="user-prompt"></textarea>
+                <textarea oninput="document.getElementById('char-count').textContent = this.value.length" maxlength="500" id="user-input" required placeholder="Try asking for a restaurant recommendation in your city" name="user-prompt" id="user-prompt"></textarea>
+            </div>
+            <div id="char-count-container">
+                <span id="char-count">0</span> / 500
             </div>
             <button class="button-28" role="button" onclick="askAssistant()">Ask TasteBuddy</button>
         </section>
